@@ -1,6 +1,9 @@
-const body = $response.body
 const url = $request.url;
+if (!$response) $done({});
+if (!$response.body) $done({});
+const body = $response.body
 const obj = JSON.parse(body)
+
 
 // 隐藏个人页我的应用和广告
 if(url.includes("bbsallapi/lego/data")){

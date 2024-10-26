@@ -7,11 +7,11 @@
 ^https?:\/\/goblin\.hupu\.com\/.+\/interfaceAd\/getOther url reject
 
 [Script]
-http-response ^https:\/\/bbs\.mobileapi\.hupu\.com/.+\/bbsallapi\/lego\/data script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js, requires-body = true, tag = hupu_lego
-http-response ^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/basketballapi\/news\/v3\/tab script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js, requires-body = true, tag = hupu_tab
-http-response ^https:\/\/match-api\.hupu\.com\/.+?\/matchallapi\/bff\/standard\/getTabDetailScheduleList script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js, requires-body = true, tag = hupu_schedule_list
-http-response ^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/bplapi\/device\/v1\/init script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js, requires-body = true, tag = hupu_init
-
+http-request ^https:\/\/bbs\.mobileapi\.hupu\.com/.+\/bbsallapi\/lego\/data script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js, requires-body = true, tag = hupu_lego
+http-request ^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/basketballapi\/news\/v3\/tab script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js, requires-body = true, tag = hupu_tab
+http-request ^https:\/\/match-api\.hupu\.com\/.+?\/matchallapi\/bff\/standard\/getTabDetailScheduleList script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js, requires-body = true, tag = hupu_schedule_list
+http-request ^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/bplapi\/device\/v1\/init script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js, requires-body = true, tag = hupu_init
+http-request ^https:\/\/match-api\.hupu\.com\/.+\/matchallapi\/liveTabList script-path = https://raw.githubusercontent.com/techmovie/quanx/main/Scripts/hupu.js, requires-body = true, tag = hupu_live_tab
 
 [MITM]
 hostname = *.hupu.com
