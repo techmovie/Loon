@@ -7,11 +7,10 @@
 ^https?:\/\/goblin\.hupu\.com\/.+\/interfaceAd\/getOther url reject
 
 [Script]
-^https:\/\/bbs\.mobileapi\.hupu\.com/.+\/bbsallapi\/lego\/data url script-response-body https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js
-^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/basketballapi\/news\/v3\/tab url script-response-body https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js
-^https:\/\/match-api\.hupu\.com\/.+\/matchallapi\/liveTabList url script-response-body https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js
-^https:\/\/match-api\.hupu\.com\/.+?\/matchallapi\/bff\/standard\/getTabDetailScheduleList url script-response-body https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js
-^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/bplapi\/device\/v1\/init url script-response-body https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js
+http-response ^https:\/\/bbs\.mobileapi\.hupu\.com/.+\/bbsallapi\/lego\/data script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js
+http-response ^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/basketballapi\/news\/v3\/tab script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js
+http-response ^https:\/\/match-api\.hupu\.com\/.+?\/matchallapi\/bff\/standard\/getTabDetailScheduleList script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js
+http-response ^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/bplapi\/device\/v1\/init script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js
 
 
 [MITM]
