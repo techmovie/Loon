@@ -56,6 +56,10 @@ DOMAIN, open.e.kuaishou.com
 DOMAIN-SUFFIX, pangolin-sdk-toutiao.com
 DOMAIN-SUFFIX, pangolin-sdk-toutiao-b.com
 
+# ======= H ======= #
+# 虎扑体育
+DOMAIN-SUFFIX,  goblin.hupu.com
+
 # ======= K ======= #
 # 酷我音乐
 DOMAIN, ad.tencentmusic.com
