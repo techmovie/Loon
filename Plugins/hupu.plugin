@@ -2,15 +2,14 @@
 #!desc = 还你一个干净的虎扑
 #!date = 2024-10-26 10:52PM
 
-
 [Rewrite]
-^https?:\/\/goblin\.hupu\.com\/.+\/interfaceAd\/getOther url reject
+^https?:\/\/(goblin|collect|hermes)\.hupu\.com\/.+\/interfaceAd\/getOther url reject
 
 [Script]
-http-response ^https:\/\/bbs\.mobileapi\.hupu\.com/.+\/bbsallapi\/lego\/data script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js, requires-body = true, tag = hupu_lego
-http-response ^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/basketballapi\/news\/v3\/tab script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js, requires-body = true, tag = hupu_tab
-http-response ^https:\/\/match-api\.hupu\.com\/.+?\/matchallapi\/bff\/standard\/getTabDetailScheduleList script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js, requires-body = true, tag = hupu_schedule_list
-http-response ^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/bplapi\/device\/v1\/init script-path = https://raw.githubusercontent.com/techmovie/RuCu6/refs/heads/main/Scripts/hupu.js, requires-body = true, tag = hupu_init
+http-response ^https:\/\/bbs\.mobileapi\.hupu\.com/.+\/bbsallapi\/lego\/data script-path = https://raw.githubusercontent.com/techmovie/Loon/main/Scripts/hupu.js, requires-body = true, tag = hupu_lego
+http-response ^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/basketballapi\/news\/v3\/tab script-path = https://raw.githubusercontent.com/techmovie/Loon/main/Scripts/hupu.js, requires-body = true, tag = hupu_tab
+http-response ^https:\/\/match-api\.hupu\.com\/.+?\/matchallapi\/bff\/standard\/getTabDetailScheduleList script-path = https://raw.githubusercontent.com/techmovie/Loon/main/Scripts/hupu.js, requires-body = true, tag = hupu_schedule_list
+http-response ^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/bplapi\/device\/v1\/init script-path = https://raw.githubusercontent.com/techmovie/Loon/main/Scripts/hupu.js, requires-body = true, tag = hupu_init
 http-response ^https:\/\/match-api\.hupu\.com\/.+\/matchallapi\/liveTabList script-path = https://raw.githubusercontent.com/techmovie/quanx/main/Scripts/hupu.js, requires-body = true, tag = hupu_live_tab
 
 [MITM]

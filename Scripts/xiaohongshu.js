@@ -173,6 +173,9 @@ if (url.includes("/v1/note/imagefeed") || url.includes("/v2/note/feed")) {
   if (obj?.data?.items?.length > 0) {
     obj.data.items = obj.data.items.filter((i) => i.model_type === "note");
   }
+}else if (url.includes("/search/trending")){
+  obj.data.queries = [];
+  obj.data.hint_word= {};
 }
 
 $done({ body: JSON.stringify(obj) });
