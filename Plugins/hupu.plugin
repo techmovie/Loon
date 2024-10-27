@@ -2,8 +2,13 @@
 #!desc = 还你一个干净的虎扑
 #!date = 2024-10-26 10:52PM
 
+[Rule]
+DOMAIN, hermes.hupu.com, REJECT
+DOMAIN, collect.hupu.com, REJECT
+DOMAIN, goblin.hupu.com, REJECT
+
 [Rewrite]
-^https?:\/\/(goblin|collect|hermes)\.hupu\.com\/.+\/interfaceAd\/getOther url reject
+^https?:\/\/goblin\.hupu\.com\/.+\/interfaceAd\/getOther url reject
 
 [Script]
 http-response ^https:\/\/bbs\.mobileapi\.hupu\.com/.+\/bbsallapi\/lego\/data script-path = https://raw.githubusercontent.com/techmovie/Loon/main/Scripts/hupu.js, requires-body = true, tag = hupu_lego
