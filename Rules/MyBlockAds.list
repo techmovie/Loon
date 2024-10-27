@@ -100,6 +100,10 @@ DOMAIN-SUFFIX, shuzilm.cn
 # 腾讯 无法使用的推送服务
 DOMAIN, tpns.qq.com
 
+# ======= T ======= #
+# 小红书
+URL-REGEX,^https:\/\/t2\.xiaohongshu\.com\/api\/v2\/collect
+
 # ======= W ======= #
 # 网易云音乐
 DOMAIN, gdt.qq.com
