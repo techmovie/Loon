@@ -1,4 +1,5 @@
 URL-REGEX,^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/bplapi\/device\/v1\/init
+URL-REGEX,^https:\/\/bbs\.mobileapi\.hupu\.com/.+?\/bbsreplyapi\/reply\/v1\/app\/create
 DOMAIN-SUFFIX,biliapi.net
 DOMAIN-SUFFIX,biliapi.com
 DOMAIN-SUFFIX,bilibili.com
