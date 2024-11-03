@@ -5,6 +5,9 @@ URL-REGEX,^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+?\/note\/comment
 URL-REGEX,^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/note
 URL-REGEX,^https:\/\/api\.weibo\.cn\/\d\/comments\/(create|reply)
 URL-REGEX,^https:\/\/api\.weibo\.cn\/\d\/statuses\/send
+URL-REGEX,https\:\/\/((140\.143\.177\.206)|(frodo\.douban\.com))\/api\/v2\/status\/create_status
+URL-REGEX,https\:\/\/((140\.143\.177\.206)|(frodo\.douban\.com))\/api\/v2\/movie\/\d+?\/(done|create_review|mark)
+URL-REGEX,https\:\/\/((140\.143\.177\.206)|(frodo\.douban\.com))\/api\/v2\/group\/topic\/\d+\/create_comment
 IP-CIDR,203.107.1.0/24
 DOMAIN,tieba.baidu.com
 DOMAIN,tbmsg.baidu.com
@@ -168,9 +171,7 @@ DOMAIN-SUFFIX,douyu.com
 DOMAIN,bbs-api.mihoyo.com
 DOMAIN,bbs-api.miyoushe.com
 IP-CIDR,49.233.242.15/32
-IP-CIDR,81.70.124.99/32
 IP-CIDR,81.70.125.19/32
-IP-CIDR,140.143.177.206/32
 DOMAIN,api.xiaoheihe.cn
 
 DOMAIN-SUFFIX,y.qq.com
