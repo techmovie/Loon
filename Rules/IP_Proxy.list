@@ -5,9 +5,6 @@ URL-REGEX,^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+?\/note\/comment
 URL-REGEX,^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/note
 URL-REGEX,^https:\/\/api\.weibo\.cn\/\d\/comments\/(create|reply)
 URL-REGEX,^https:\/\/api\.weibo\.cn\/\d\/statuses\/send
-URL-REGEX,https\:\/\/((140\.143\.177\.206)|(frodo\.douban\.com))\/api\/v2\/status\/create_status
-URL-REGEX,https\:\/\/((140\.143\.177\.206)|(frodo\.douban\.com))\/api\/v2\/movie\/\d+?\/(done|create_review|mark)
-URL-REGEX,https\:\/\/((140\.143\.177\.206)|(frodo\.douban\.com))\/api\/v2\/group\/topic\/\d+\/create_comment
 IP-CIDR,203.107.1.0/24
 DOMAIN,tieba.baidu.com
 DOMAIN,tbmsg.baidu.com
