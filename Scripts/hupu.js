@@ -36,6 +36,8 @@ if(url.includes("bbsallapi/lego/data")){
 // 去除顶部TAB的活动广告
 }else if(url.includes("device/v1/init")){
   obj.result.activityNav = [];
+}else if(url.includes("buffer/hotList")){
+  obj.result.topBanner = {};
 }
 
 $done({body: JSON.stringify(obj)})

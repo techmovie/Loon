@@ -19,6 +19,7 @@ http-response ^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/basketballapi\/news\/
 http-response ^https:\/\/match-api\.hupu\.com\/.+?\/matchallapi\/bff\/standard\/getTabDetailScheduleList script-path = https://raw.githubusercontent.com/techmovie/Loon/main/Scripts/hupu.js, requires-body = true, tag = hupu_schedule_list
 http-response ^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/bplapi\/device\/v1\/init script-path = https://raw.githubusercontent.com/techmovie/Loon/main/Scripts/hupu.js, requires-body = true, tag = hupu_init
 http-response ^https:\/\/match-api\.hupu\.com\/.+\/matchallapi\/liveTabList script-path = https://raw.githubusercontent.com/techmovie/quanx/main/Scripts/hupu.js, requires-body = true, tag = hupu_live_tab
+http-response ^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/buffer\/hotList script-path = https://raw.githubusercontent.com/techmovie/quanx/main/Scripts/hupu.js, requires-body = true, tag = hupu_top_banner
 
 [MITM]
 hostname = *.hupu.com
