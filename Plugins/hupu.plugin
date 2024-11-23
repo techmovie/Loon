@@ -11,6 +11,7 @@ DOMAIN, goblin.hupu.com, REJECT
 [Rewrite]
 ^https?:\/\/goblin\.hupu\.com\/.+\/interfaceAd\/getOther url reject
 ^https?:\/\/games\.mobileapi\.hupu\.com\/.+?\/bplapi\/reddot\/v1\/app\/getReddot url reject-dict
+^https?:\/\/games\.mobileapi\.hupu\.com\/.+?\/bbsallapi\/bubbles\/queryLatest url reject-dict
 
 [Script]
 http-response ^https:\/\/bbs\.mobileapi\.hupu\.com/.+\/bbsallapi\/lego\/data script-path = https://raw.githubusercontent.com/techmovie/Loon/main/Scripts/hupu.js, requires-body = true, tag = hupu_lego
