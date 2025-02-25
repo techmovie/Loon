@@ -1,7 +1,7 @@
 URL-REGEX,^https:\/\/games\.mobileapi\.hupu\.com\/.+?\/bplapi\/device\/v1\/init
 URL-REGEX,^https:\/\/bbs\.mobileapi\.hupu\.com\/.+?\/bbsreplyapi\/reply\/v1\/app\/create
 URL-REGEX,^https:\/\/bbs\.mobileapi\.hupu\.com\/.+?\/bbsthreadapi\/editor\/thread
-URL-REGEX,^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+?\/note\/comment
-URL-REGEX,^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/note
+URL-REGEX,^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+?\/note\/comment$
+URL-REGEX,^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/note$
 URL-REGEX,^https:\/\/api\.weibo\.cn\/\d\/comments\/(create|reply)
 URL-REGEX,^https:\/\/api\.weibo\.cn\/\d\/statuses\/send
