@@ -38,7 +38,10 @@ if (url.includes("bbsallapi/lego/data")) {
 } else if (url.includes("buffer/hotList")) {
   obj.result.topBanner = {}
 } else if (url.includes("nav/content")) {
-  obj.result.components = []
+  obj.result.components = obj.result.components.filter((component) => {
+    return !component.code.match(/activity|ad/i)
+  })
+ 
 }
 
 $done({ body: JSON.stringify(obj) })
